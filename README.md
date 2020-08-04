@@ -1,10 +1,14 @@
 # Tracking Data Change in Django
 
 ## Why the need arised at PBS
-- Updating a datastore | The CQRS Pattern (+image)
-- Creating an audit log (Who, What, When)
+ - Updating a datastore | The CQRS Pattern 
+ - CQRS example (from https://docs.microsoft.com/en-us/azure/architecture/patterns) :
 
-## The Manual / Granular Solutions
+ ![](https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/command-and-query-responsibility-segregation-cqrs-separate-stores.png "CQRS Drawing")
+
+ - Creating an audit log (Who, What, When)
+
+## Intercepting change: Manual / Granular Solutions
 - In views
 ```python
     # https://docs.djangoproject.com/en/3.0/ref/class-based-views/generic-editing/#formview
